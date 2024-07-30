@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: gray;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    background-color: white;
+    width: 198px;
+    border-radius: 7px;
+    padding: 0 0 65px 0;
+    margin: 5px;
+  }
+  .image {
+    padding: 5px;
+  }
+  .image img {
+    border-radius: 7px;
+  }
+  .content {
+    padding: 7px 13px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .content p {
+    font-size: 9px;
+    color: gray;
+  }
+
+  .capsules span {
+    border: 1px solid gray;
+    padding: 0px 6px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .capsules {
+    padding: 0 34px 0 48px;
+  }
+
+  .button {
+    text-align: center;
+  }
+
+  .button button {
+    padding: 7px 7px;
+    border-radius: 14px;
+    background-color: lightblue;
+    color: darkblue;
+    font-size: 10px;
+    border: none;
+    margin-top: 7px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .button button:hover {
+    background-color: rgb(128, 175, 191);
+    color: rgb(34, 34, 202);
+  }

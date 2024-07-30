@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        display: flex;
+       /* align-content: flex-start; /*when we have only items on multiple lines*/
+        height: 80vh;
+        /*center horizontally
+            justify-content: center;
+        /*center vertically*/
+        align-items:center; /*when we have items on one line*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        /*row-gap: 30px;
+        column-gap: 10px;*/
+        gap:30px 10px;
+      }
+
+      .items {
+        height: 92px;
+        width: 92px;
+        border: 2px solid black;
+        background-color: blueviolet;
+        /*flex-grow: 1;*/
+        
+        
+      }
+
+      .order-1{
+        order: 1;
+      }
+      .order-2{
+        order: 2;
+      }
+      .order-3{
+        order: 3;
+      }
+
+      .item1{
+        /*flex-grow: 2;*/
+        flex-shrink: 2;
+        align-self: flex-end;
+      }
+
+      .item2{
+        align-self: flex-start;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="items item1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items order-1">4</div>
+        <div class="items"></div>
+        <div class="items item2"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        
+      </div>
+    </main>
+  </body>
+</html>

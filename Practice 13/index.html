@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Property</title>
+    <style>
+      .box {
+        border: 2px solid black;
+        height: 433px;
+        width: 80vw;
+        padding: 3px;
+        margin: 3px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .parent{
+        padding: 34px;
+        margin: 56px;
+        border: 3px solid purple;
+        /*These three properties positioned box1 relative to its parent not relevant to the body or html
+        /*position: relative;*/
+       /* transform: translate(0);*/
+       /*filter: invert(0);*/
+       /*perspective: 0em;*/
+
+      }
+
+      .box1 {
+        background-color: aqua;
+        /*position: sticky;
+        top: 0px;
+        height: 111px;
+        width: 100%;
+        padding: 0;
+        margin: 0;*/
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        /*position: relative;
+        z-index: 2;*/
+      }
+      .box2 {
+        background-color: blue;
+       /* position: relative;
+        top: 34px;
+        left: 56px;*/
+      }
+      .box3 {
+        background-color: rgb(207, 168, 117);
+       /* position: fixed;
+        bottom: 0px;
+        left: 8vw;
+        height: 111px;*/
+      }
+      .box4 {
+        background-color: rgb(78, 144, 146);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h1>CSS Position Property</h1>
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>

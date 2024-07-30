@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: rgb(222, 160, 66);
+        }
+
+        /*landscape when width is more then height and portrait when height is more then width*/
+        @media screen and (orientation:landscape){
+            body{
+                border: 2px solid purple;
+            }
+        }
+
+        @media only screen and (max-width : 455px){
+            body{
+                background-color: brown;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: magenta;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .boxes{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey I am a div
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

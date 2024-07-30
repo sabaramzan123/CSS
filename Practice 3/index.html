@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+         /*Element Selector */
+        div{
+            /* background-color: red; */
+        }
+
+        /*Class Selector*/
+        .red{
+            background-color: red;
+        }
+
+        /*ID Selector*/
+        #green{
+            background-color: green;
+        }
+
+        /*child selector*/
+        div>p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /*Descendents Selector*/
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /*Universal Selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*pseudo selector*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: salmon;
+        }
+
+        a:hover{
+            background-color: sienna;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+     <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+     </main>
+    <div class="red">
+        I am a div
+        <article>
+            <p>I am Saba Ramzan learning web development</p>
+        </article>
+        <p>Saba Ramzan</p>
+       
+    </div>
+    <div id="green">
+        Hey I am Saba
+    </div>
+    <a target="_blank" href="https://www.google.com/">Go to google</a>
+    <br>
+    <a target="_blank" href="https://www.linkedin.com/in/saba-ramzan-94b7742b8">Open LinkedIn</a>
+    <br>
+    <a target="_blank" href="https://github.com/sabaramzan123?tab=repositorie">Open GitHub</a>
+</body>
+</html>
